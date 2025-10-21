@@ -16,3 +16,25 @@ let atletas = [
     notas: [10, 10, 10, 9, 9.5]
   }
 ];
+
+let nome;
+let notas;
+
+
+for (let atleta of atletas) {
+  let nome = atleta.nome;
+  let notas = atleta.notas;
+
+  atleta.notas.sort(function (a, b) {
+    return a - b;
+  });
+
+
+  console.log(nome);
+  console.log(notas);
+
+};
+
+
+
+
