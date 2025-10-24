@@ -29,9 +29,18 @@ for (let atleta of atletas) {
     return a - b;
   });
 
+  let notasValidas = atleta.notas.slice(1, 4);
+  let soma = 0;
+  notasValidas.forEach(function (nota) {
+    soma = soma + nota;
+  })
+
+  let media = soma / notasValidas.length;
 
   console.log(nome);
   console.log(notas);
+  console.log(notasValidas);
+  console.log(`A média é ${media}`);
 
 };
 
